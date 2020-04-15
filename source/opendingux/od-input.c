@@ -56,10 +56,14 @@ uint32_t OpenDinguxKeys[OPENDINGUX_BUTTON_COUNT] = {
 	0,
 	0,
 	0,
+#ifdef PG2
+	SDLK_RCTRL,      // PG2: Quick flick of Power
+#else
 #ifdef RG350
 	SDLK_HOME,       // RG359: Quick flick of Power
 #else
 	SDLK_3,          // GCW: Quick flick of Power
+#endif
 #endif
 };
 
